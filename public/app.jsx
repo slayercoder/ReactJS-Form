@@ -10,7 +10,7 @@ class Form extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleChange(e){
-        this.setState({input : e.target.value});
+        this.setState({input : e.target.value.toUpperCase()});
     }
     handleSubmit(){
         this.setState({submit : this.state.input});
